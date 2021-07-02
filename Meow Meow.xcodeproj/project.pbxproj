@@ -13,6 +13,10 @@
 		94711CC1268F17110089041D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94711CC0268F17110089041D /* Preview Assets.xcassets */; };
 		94711CCC268F17110089041D /* Meow_MeowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94711CCB268F17110089041D /* Meow_MeowTests.swift */; };
 		94711CD7268F17110089041D /* Meow_MeowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94711CD6268F17110089041D /* Meow_MeowUITests.swift */; };
+		94711CE7268F17780089041D /* meo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94711CE6268F17780089041D /* meo.mp3 */; };
+		94711CED268F187B0089041D /* RandomCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94711CEC268F187B0089041D /* RandomCatView.swift */; };
+		94711CEF268F188A0089041D /* FavoriteCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94711CEE268F188A0089041D /* FavoriteCatView.swift */; };
+		94711CF1268F18920089041D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94711CF0268F18920089041D /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		94711CD2268F17110089041D /* Meow MeowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meow MeowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94711CD6268F17110089041D /* Meow_MeowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meow_MeowUITests.swift; sourceTree = "<group>"; };
 		94711CD8268F17110089041D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94711CE6268F17780089041D /* meo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meo.mp3; sourceTree = "<group>"; };
+		94711CEC268F187B0089041D /* RandomCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCatView.swift; sourceTree = "<group>"; };
+		94711CEE268F188A0089041D /* FavoriteCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCatView.swift; sourceTree = "<group>"; };
+		94711CF0268F18920089041D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				94711CB9268F17100089041D /* Meow_MeowApp.swift */,
-				94711CBB268F17100089041D /* ContentView.swift */,
+				94711CE5268F172E0089041D /* View */,
 				94711CBD268F17110089041D /* Assets.xcassets */,
+				94711CE6268F17780089041D /* meo.mp3 */,
 				94711CC2268F17110089041D /* Info.plist */,
 				94711CBF268F17110089041D /* Preview Content */,
 			);
@@ -128,6 +137,17 @@
 				94711CD8268F17110089041D /* Info.plist */,
 			);
 			path = "Meow MeowUITests";
+			sourceTree = "<group>";
+		};
+		94711CE5268F172E0089041D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94711CBB268F17100089041D /* ContentView.swift */,
+				94711CEC268F187B0089041D /* RandomCatView.swift */,
+				94711CEE268F188A0089041D /* FavoriteCatView.swift */,
+				94711CF0268F18920089041D /* AboutView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94711CE7268F17780089041D /* meo.mp3 in Resources */,
 				94711CC1268F17110089041D /* Preview Assets.xcassets in Resources */,
 				94711CBE268F17110089041D /* Assets.xcassets in Resources */,
 			);
@@ -261,6 +282,9 @@
 			files = (
 				94711CBC268F17100089041D /* ContentView.swift in Sources */,
 				94711CBA268F17100089041D /* Meow_MeowApp.swift in Sources */,
+				94711CED268F187B0089041D /* RandomCatView.swift in Sources */,
+				94711CEF268F188A0089041D /* FavoriteCatView.swift in Sources */,
+				94711CF1268F18920089041D /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +451,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "haihd.com.Meow-Meow";
+				PRODUCT_BUNDLE_IDENTIFIER = "haihd.com.Meow-Meow-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +473,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "haihd.com.Meow-Meow";
+				PRODUCT_BUNDLE_IDENTIFIER = "haihd.com.Meow-Meow-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
